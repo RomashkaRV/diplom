@@ -1,6 +1,6 @@
 import React from "react";
 
-import world from "../img/world.png"
+import world from "./img/world.png"
 
 import "./index.css";
 

@@ -13,33 +13,52 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const isMainPath = location.pathname === "/main";
+  const isMainPath = location.pathname !== "/";
+
+  const path = location.pathname;
+
+  const links = [
+    {
+      title: "Фильмы",
+      href: "/films"
+    },
+    {
+      title: "Сохранненые фильмы",
+      href: "/saved-films"
+    },
+    {
+      title: "Аккаунт",
+      href: "/account"
+    }
+  ]
 
   return (
     <header className={`header ${isMainPath ? "header-main" : ""}`}>
       <div className="header__container">
         <img
           className="header__logo"
-          src={logo}
           alt=""
+          src={logo}
           onClick={() => navigate("/")}
         />
-        <nav className={`header__nav ${isMainPath ? "header__nav-main" : ""}`}>
-        <p onClick={() => navigate("/main")}>
-            Фильмы
-          </p>
-          <p onClick={() => navigate("/main")}>
-            Сохранённые фильмы
-          </p>
+        <nav className={"header__nav"}>
+          {links.map(((item, index) =>
+            <p
+              className={`
+                nav__item
+                ${path === item.href ? "nav__item-active" : ""}
+                ${isMainPath ? "header__nav-main" : ""}
+              `}
+              onClick={() => navigate(item.href)}
+              key={index}
+            >
+              {item.title}
+            </p>
+          ))}
         </nav>
-        <div className={`header__account ${isMainPath ? "header__account-main" : ""}`}>
-        <p href="">
-            Аккаунт
-          </p>
-          <button>
-            <img src={user} alt=""/>
-          </button>
-        </div>
+        <button>
+          <img src={user} alt=""/>
+        </button>
         <div className="header__burgerBtn">
           <img src={burger} alt=""/>
         </div>

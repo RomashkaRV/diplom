@@ -26,6 +26,8 @@
   }
 
   .header__nav {
+    width: 100%;
+
     margin-left: 45px;
 
     display: flex;
@@ -38,7 +40,7 @@
     };
   }
 
-  .header__nav p {
+  .nav__item {
     font-size: 13px;
 
     font-weight: 400;
@@ -51,63 +53,17 @@
     color: #FFF;
   }
 
-  .header__nav-main p {
-    color: #000;
-  }
-
-  .header__nav-main p:first-child {
-    font-weight: 500;
-  }
-
-  .header__account {
+  .nav__item:last-child {
     margin-left: auto;
-
-    display: flex;
-    align-items: center;
-    gap: 17px;
+    margin-right: 17px;
   }
 
-  @media screen and (max-width: 980px) {
-    .header__account {
-      display: none;
-    };
-  }
-
-  .header__account p {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
-
-    cursor: pointer;
-
-    color: #fff;
-  }
-
-  .header__account button {
-    width: 26px;
-    height: 30px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-
-    border: none;
-    border-radius: 4px;
-
-    background: #2BE080;
-  }
-
-  .header__account-main p {
+  .header__nav-main {
     color: #000;
-
-    font-weight: 500;
   }
 
-  .header__account button img {
-    width: 11.5px;
-    height: 14px;
+  .nav__item-active {
+    font-weight: 500;
   }
 
   .header__burgerBtn {
@@ -132,4 +88,29 @@
   .header__container {
     padding: 18px 14px;
   };
+}
+
+.header__container button {
+  width: 26px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 4px;
+
+  background: #2BE080;
+}
+
+@media screen and (max-width: 980px) {
+  .header__container button {
+    display: none;
+  }
+}
+
+.header__container button img {
+  width: 11.5px;
+  height: 14px;
 }

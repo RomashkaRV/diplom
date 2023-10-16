@@ -4,8 +4,8 @@ import Films from "../Films";
 import Header from "../Header";
 import Footer from "../Footer";
 
-import search from "./img/search.svg";
 import find from "./img/find.svg";
+import search from "./img/search.svg";
 
 import "./index.css";
 
@@ -51,9 +51,7 @@ export default function FilmsLayout({ filmsList }) {
             </p>
           </div>
         </div>
-        <>
-          <Films filmsList={filmsList} />
-        </>
+        <Films filmsList={filmsList} />
       </div>
       <Footer />
     </>

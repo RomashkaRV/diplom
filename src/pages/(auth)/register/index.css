@@ -1,4 +1,4 @@
-.auth {
+.register {
   max-width: 1280px;
   height: 100vh;
 
@@ -12,18 +12,17 @@
 }
 
 @media screen and (max-width: 980px) {
-  .auth {
+  .register {
     padding: 0 30px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .auth {
+  .register {
     padding: 56px 30px 30px 30px;
   }
 }
-
-.auth__form {
+.register__form {
   width: 100%;
   max-width: 396px;
   height: 100%;
@@ -36,34 +35,34 @@
 
 
 @media screen and (max-width: 420px) {
-  .auth__form {
+  .register__form {
     max-height: 690px;
   }
 }
 
-.auth__form__head {
+.register__form__head {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 @media screen and (max-width: 420px) {
-  .auth__form__head {
+  .register__form__head {
     gap: 50px;
   }
 }
 
-.auth__form__head img {
+.register__form__head img {
   width: 38px;
   height: 38px;
 }
 
-.auth__form__head p {
+.register__form__head p {
   font-size: 24px;
   font-weight: 500;
 }
 
-.auth__form__actions {
+.register__form__actions {
   padding-top: 40px;
 
   position: relative;
@@ -74,7 +73,7 @@
 }
 
 @media screen and (max-width: 420px) {
-  .auth__form__actions {
+  .register__form__actions {
     padding-top: 80px;
   }
 }
@@ -104,19 +103,29 @@
   background: #F9F9F9;
 }
 
-.auth__form__entry {
+.input__password {
+  position: absolute;
+  bottom: -20px;
+
+  font-size: 10px;
+  font-weight: 400;
+
+  color: #EE3465;
+}
+
+.register__form__entry {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 @media screen and (max-width: 980px) {
-  .auth__form__entry {
+  .register__form__entry {
     gap: 14px;
   }
 }
 
-.auth__form__entry > button {
+.register__form__entry > button {
   width: 100%;
 
   padding: 14px 0;
@@ -132,7 +141,7 @@
   background: #FF6838;
 }
 
-.auth__form__createAccount {
+.register__form__createAccount {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -140,7 +149,7 @@
   color: #A0A0A0;
 }
 
-.auth__form__createAccount a {
+.register__form__createAccount a {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -149,8 +158,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .auth__form__createAccount,
-  .auth__form__createAccount a {
+  .register__form__createAccount,
+  .register__form__createAccount a {
     font-size: 12px;
   }
 }

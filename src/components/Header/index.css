@@ -54,8 +54,8 @@
   }
 
   .nav__item:last-child {
-    margin-left: auto;
     margin-right: 17px;
+    margin-left: auto;
   }
 
   .header__nav-main {
@@ -67,8 +67,9 @@
   }
 
   .header__burgerBtn {
-    display: none;
     margin-left: auto;
+
+    display: none;
   }
 
   @media screen and (max-width: 980px) {

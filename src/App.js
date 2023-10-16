@@ -3,10 +3,12 @@ import { FilmsData } from "./data/films";
 
 import Account from "./pages/account";
 import Landing from "./pages/landing";
+import Auth from "./pages/(auth)/auth";
+import NotFoundPage from "./pages/404";
+import Register from "./pages/(auth)/register";
 import FilmsLayout from "./components/FilmsLayout";
 
 import "./index.css";
-import Auth from "./pages/(auth)/auth";
 
 const films = FilmsData;
 
@@ -18,6 +20,8 @@ function App() {
       <Route path="/saved-films" element={ <FilmsLayout filmsList={films} /> } />
       <Route path="/account" element={ <Account /> } />
       <Route path="/auth" element={ <Auth /> } />
+      <Route path="/register" element={ <Register /> } />
+      <Route path="/404" element={ <NotFoundPage /> } />
     </Routes>
   );
 }

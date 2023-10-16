@@ -4,18 +4,27 @@ import logo from "../../../assets/img/logo.svg";
 
 import "./index.css";
 
-export default function Auth() {
+export default function Register() {
   return (
-    <div className="auth">
-      <form className="auth__form">
+    <div className="register">
+      <form className="register__form">
         <div>
-          <div className="auth__form__head">
+          <div className="register__form__head">
             <img src={logo} alt=""/>
             <p>
-              Рады видеть!
+              Добро пожаловать!
             </p>
           </div>
-          <div className="auth__form__actions">
+          <div className="register__form__actions">
+            <div className="input">
+              <label htmlFor="name">
+                Имя
+              </label>
+              <input
+                id="name"
+                type="text"
+              />
+            </div>
             <div className="input">
               <label htmlFor="email">
                 E-mail
@@ -33,16 +42,19 @@ export default function Auth() {
                 id="password"
                 type="password"
               />
+              <p className="input__password error">
+                Что-то пошло не так...
+              </p>
             </div>
           </div>
         </div>
-        <div  className="auth__form__entry">
+        <div  className="register__form__entry">
           <button>
-            Войти
+            Зарегистрироваться
           </button>
-          <div className="auth__form__createAccount">
+          <div className="register__form__createAccount">
             <p>
-              Ещё не зарегистрированы? <Link to="/register">Регистрация</Link>
+              Уже зарегистрированы? <Link to="/auth">Войти</Link>
             </p>
           </div>
         </div>

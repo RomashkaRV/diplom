@@ -2,7 +2,7 @@ import React from "react";
 
 import { useLocation, useNavigate } from "react-router-dom";
 
-import logo from "./img/logo.svg"
+import logo from "../../assets/img/logo.svg"
 import user from "./img/user.svg"
 import burger from "./img/burger.svg"
 
@@ -19,7 +19,7 @@ export default function Header() {
   const links = [
     {
       title: "Фильмы",
-      href: "/Films"
+      href: "/films"
     },
     {
       title: "Сохранненые фильмы",

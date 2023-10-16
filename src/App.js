@@ -6,6 +6,7 @@ import Landing from "./pages/landing";
 import FilmsLayout from "./components/FilmsLayout";
 
 import "./index.css";
+import Auth from "./pages/(auth)/auth";
 
 const films = FilmsData;
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/films" element={ <FilmsLayout filmsList={films} /> } />
       <Route path="/saved-films" element={ <FilmsLayout filmsList={films} /> } />
       <Route path="/account" element={ <Account /> } />
+      <Route path="/auth" element={ <Auth /> } />
     </Routes>
   );
 }

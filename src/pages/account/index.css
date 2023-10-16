@@ -101,8 +101,8 @@
 }
 
 .account__actions p {
-  cursor: pointer;
   font-size: 13px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 420px) {
@@ -116,6 +116,6 @@
 }
 
 .account__actions__logout {
-  color: #EE3465;
   font-weight: 500;
+  color: #EE3465;
 }

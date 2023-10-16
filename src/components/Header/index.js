@@ -9,9 +9,8 @@ import burger from "./img/burger.svg"
 import "./index.css";
 
 export default function Header() {
-
-  const navigate = useNavigate();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isMainPath = location.pathname !== "/";
 
@@ -20,11 +19,11 @@ export default function Header() {
   const links = [
     {
       title: "Фильмы",
-      href: "/films"
+      href: "/Films"
     },
     {
       title: "Сохранненые фильмы",
-      href: "/saved-films"
+      href: "/saved-Films"
     },
     {
       title: "Аккаунт",

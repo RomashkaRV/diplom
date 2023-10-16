@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { FilmsData } from "./data/films";
 
-import FilmsLayout from "./components/FilmsLayout";
-
+import Account from "./pages/account";
 import Landing from "./pages/landing";
+import FilmsLayout from "./components/FilmsLayout";
 
 import "./index.css";
 
@@ -15,6 +15,7 @@ function App() {
       <Route path="/" element={ <Landing /> } />
       <Route path="/films" element={ <FilmsLayout filmsList={films} /> } />
       <Route path="/saved-films" element={ <FilmsLayout filmsList={films} /> } />
+      <Route path="/account" element={ <Account /> } />
     </Routes>
   );
 }

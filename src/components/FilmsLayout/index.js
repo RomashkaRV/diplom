@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Films from "../Films";
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -7,7 +8,6 @@ import search from "./img/search.svg";
 import find from "./img/find.svg";
 
 import "./index.css";
-import Films from "../../pages/films";
 
 export default function FilmsLayout({ filmsList }) {
   const [isShortFilm, setIsShortFilm] = useState(false);

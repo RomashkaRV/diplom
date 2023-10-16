@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import FilmItem from "../../components/FilmItem";
+import FilmItem from "./FilmItem";
 
 import "./index.css";
 
@@ -16,6 +16,7 @@ export default function Films({ filmsList }) {
       <div className={`film__list ${isShowMore ? "film__list-active" : ""} `}>
         {filmsList.map((film) => (
           <FilmItem
+            key={film.id}
             title={film.title}
             hours={film.hours}
             minute={film.minute}

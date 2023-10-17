@@ -1,21 +1,28 @@
 .account {
   width: 100%;
   max-width: 1280px;
-  min-height: 100%;
+  height: 480px;
 
-  margin: 0 auto;
-  padding: 74px 30px 70px 30px;
+  margin: 74px auto 0 auto;
+  padding: 0 30px 0 30px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 980px) {
   .account {
-    padding: 230px 30px 0 30px;
+    margin-top: 230px;
+    padding: 0 30px 0 30px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .account {
-    padding: 70px 30px 0 30px;
+    height: 100%;
+
+    margin-top: 70px;
+    padding: 0 30px 0 30px;
   }
 }
 
@@ -28,6 +35,7 @@
 }
 
 .account__form {
+  width: 100%;
   max-width: 410px;
 
   margin: 0 auto;
@@ -38,17 +46,6 @@
   gap: 16px;
 }
 
-@media screen and (max-width: 980px) {
-  .account {
-    padding-top: 230px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .account {
-    padding-top: 80px;
-  }
-}
 
 .account__form__line {
   width: 100%;
@@ -75,8 +72,7 @@
 .account__actions {
   width: 100%;
 
-  margin: 220px auto 0 auto;
-  padding-bottom: 70px;
+  margin-top: auto;
 
   display: flex;
   align-items: center;
@@ -84,20 +80,14 @@
   gap: 16px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 420px) {
   .account__actions {
     margin-top: 0;
-    padding-bottom: 269px;
+    padding-bottom: 40px;
 
     position: absolute;
     bottom: 0;
     left: 0;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .account__actions {
-    padding-bottom: 40px;
   }
 }
 
